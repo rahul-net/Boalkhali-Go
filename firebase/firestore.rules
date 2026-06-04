@@ -1,0 +1,66 @@
+rules_version = '2';
+
+service cloud.firestore {
+
+match /databases/{database}/documents {
+
+/* USERS */
+
+match /users/{userId} {
+
+allow create:
+if request.auth != null;
+
+allow read:
+if request.auth != null;
+
+allow update:
+if request.auth != null
+&& request.auth.uid == userId;
+
+allow delete:
+if false;
+
+}
+
+/* DRIVERS */
+
+match /drivers/{driverId} {
+
+allow create:
+if request.auth != null
+&& request.auth.uid == driverId;
+
+allow read:
+if request.auth != null;
+
+allow update:
+if request.auth != null
+&& request.auth.uid == driverId;
+
+allow delete:
+if false;
+
+}
+
+/* RIDES */
+
+match /rides/{rideId} {
+
+allow create:
+if request.auth != null;
+
+allow read:
+if request.auth != null;
+
+allow update:
+if request.auth != null;
+
+allow delete:
+if false;
+
+}
+
+}
+
+}
