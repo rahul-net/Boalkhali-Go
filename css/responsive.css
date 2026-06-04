@@ -1,0 +1,331 @@
+/* ==========================================================
+BOALKHALI GO
+Global Responsive System
+File: responsive.css
+========================================================== */
+
+/* ==========================================
+Large Desktop
+========================================== */
+
+@media (min-width: 1400px){
+
+.container,
+.admin-container,
+.driver-container,
+.rider-container{
+
+max-width:1400px;
+margin:auto;
+
+}
+
+}
+
+/* ==========================================
+Laptop
+========================================== */
+
+@media (max-width:1200px){
+
+.stats-grid{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.grid-4{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+}
+
+/* ==========================================
+Tablet
+========================================== */
+
+@media (max-width:992px){
+
+.grid-4,
+.grid-3,
+.stats-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.profile-grid{
+
+grid-template-columns:
+1fr;
+
+}
+
+.rider-grid{
+
+grid-template-columns:
+1fr;
+
+}
+
+.approval-grid{
+
+grid-template-columns:
+1fr;
+
+}
+
+.widget-grid{
+
+grid-template-columns:
+1fr;
+
+}
+
+}
+
+/* ==========================================
+Mobile Navigation
+========================================== */
+
+@media (max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+text-align:center;
+
+}
+
+.admin-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.profile-top{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.profile-header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.driver-actions{
+
+flex-direction:column;
+
+}
+
+}
+
+/* ==========================================
+Mobile Layout
+========================================== */
+
+@media (max-width:768px){
+
+.container,
+.admin-container,
+.driver-container,
+.rider-container{
+
+padding:15px;
+
+}
+
+.card,
+.stat-card,
+.booking-card,
+.summary-card,
+.driver-profile,
+.admin-section{
+
+padding:18px;
+
+}
+
+.welcome-banner,
+.driver-hero{
+
+padding:20px;
+
+}
+
+}
+
+/* ==========================================
+Mobile Typography
+========================================== */
+
+@media (max-width:768px){
+
+h1{
+
+font-size:28px !important;
+
+}
+
+h2{
+
+font-size:24px !important;
+
+}
+
+h3{
+
+font-size:20px !important;
+
+}
+
+.stat-value{
+
+font-size:24px !important;
+
+}
+
+.earnings-value{
+
+font-size:30px !important;
+
+}
+
+}
+
+/* ==========================================
+Small Mobile
+========================================== */
+
+@media (max-width:576px){
+
+.stats-grid,
+.grid-4,
+.grid-3,
+.grid-2{
+
+grid-template-columns:
+1fr;
+
+}
+
+.trip-meta{
+
+flex-direction:column;
+
+}
+
+.request-route,
+.trip-route{
+
+font-size:16px;
+
+}
+
+.auth-card{
+
+padding:20px;
+
+}
+
+}
+
+/* ==========================================
+Extra Small Mobile
+========================================== */
+
+@media (max-width:400px){
+
+.btn,
+.auth-btn,
+.save-profile-btn,
+.accept-btn,
+.complete-btn{
+
+width:100%;
+
+}
+
+.driver-avatar,
+.profile-avatar{
+
+width:90px;
+height:90px;
+
+}
+
+}
+
+/* ==========================================
+Table Responsive
+========================================== */
+
+@media (max-width:768px){
+
+.admin-table{
+
+display:block;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+}
+
+/* ==========================================
+Image Responsive
+========================================== */
+
+img{
+
+max-width:100%;
+
+height:auto;
+}
+
+/* ==========================================
+Utility Classes
+========================================== */
+
+.hide-mobile{
+
+display:block;
+}
+
+.show-mobile{
+
+display:none;
+}
+
+@media(max-width:768px){
+
+.hide-mobile{
+
+display:none;
+
+}
+
+.show-mobile{
+
+display:block;
+
+}
+
+}
