@@ -19,7 +19,6 @@ addDoc,
 getDocs,
 query,
 where,
-orderBy,
 serverTimestamp
 
 }
