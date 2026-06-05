@@ -63,8 +63,6 @@ await loadProfile();
 await loadTrips();
 
 await loadDashboardStats();
-
-await loadActiveRide();
   
 await loadActiveRide();
 
