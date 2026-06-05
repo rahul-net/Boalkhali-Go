@@ -144,7 +144,7 @@ document.getElementById(
 
 const distance = 5;
 
-const fare =
+const fare =100
 calculateFare(
 distance
 );
